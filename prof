@@ -1,0 +1,18 @@
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+
+export NVM_DIR="/home/vagrant/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+nvm use 7.10
+
+
+cd /vagrant
+
+clear
+export PS1="[\[\e[0;34m\]Web Dev\[\e[m\]]: \w $ "
+echo "Welcome to your Firehose Web Dev Environment"
+echo "For more info check out theFirehoseProject.com"
+echo
+
